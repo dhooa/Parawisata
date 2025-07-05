@@ -1,4 +1,5 @@
-import Link from 'next-intl/link';
+// PERBAIKAN: Ganti import Link di sini
+import Link from 'next-intl/navigation';
 
 interface PackageProps {
   title: string;
