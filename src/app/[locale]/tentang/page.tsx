@@ -2,14 +2,6 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-export function generateMetadata({params: {locale}}: {params: {locale: string}}): Metadata {
-  const t = require(`../../../messages/${locale}.json`);
-  return {
-    title: t.Navigation.about,
-    description: t.AboutPage.content.p1,
-  };
-}
-
 const AboutPage = () => {
   const t = useTranslations('AboutPage');
   const whyUsPoints: string[] = t.raw('content.whyUsPoints');
