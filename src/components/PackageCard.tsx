@@ -1,5 +1,5 @@
-// PERBAIKAN: Ganti import Link di sini
-import Link from 'next-intl/navigation';
+// PERBAIKAN FINAL: Gunakan named import { ... }
+import { Link } from 'next-intl/navigation';
 
 interface PackageProps {
   title: string;
