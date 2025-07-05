@@ -1,7 +1,7 @@
 'use client'; 
 
-import Link from 'next-intl/link';
-import { usePathname } from 'next-intl/client';
+// PERBAIKAN UTAMA ADA DI SINI:
+import { Link, usePathname } from 'next-intl/navigation'; 
 import { useTranslations } from 'next-intl';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
