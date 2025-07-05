@@ -1,7 +1,6 @@
 import { DestinationCard } from '@/components/DestinationCard';
 import { PackageCard } from '@/components/PackageCard';
-// PERBAIKAN FINAL: Gunakan named import { ... }
-import { Link } from 'next-intl/navigation';
+import Link from 'next/link'; // PERBAIKAN: Kembali ke 'next/link'
 import { useTranslations } from 'next-intl';
 
 export default function HomePage() {
