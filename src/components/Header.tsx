@@ -1,7 +1,7 @@
 'use client'; 
 
-// PERBAIKAN FINAL: Gunakan named import { ... } untuk semua
-import { Link, usePathname } from 'next-intl/navigation'; 
+import Link from 'next/link'; // PERBAIKAN: Kembali ke 'next/link'
+import { usePathname } from 'next-intl/navigation'; // INI SUDAH BENAR
 import { useTranslations } from 'next-intl';
 import { LanguageSwitcher } from './LanguageSwitcher';
 
@@ -25,6 +25,7 @@ export const Header = () => {
         <div className="flex items-center space-x-4 md:space-x-8">
           <ul className="hidden items-center space-x-8 md:flex">
             {navLinks.map((link) => {
+              // Middleware akan menangani locale, kita tidak perlu menambahkannya manual
               const isActive = link.href === '/' ? pathname === '/' : pathname.startsWith(link.href);
               return (
                 <li key={link.href}>
