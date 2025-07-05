@@ -1,8 +1,8 @@
 import {getRequestConfig} from 'next-intl/server';
  
 export default getRequestConfig(async ({locale}) => {
-  // Muat file terjemahan berdasarkan locale yang aktif
+  // Path ini sekarang benar karena 'messages' ada di dalam 'src'
   return {
-    messages: (await import(`../messages/${locale}.json`)).default
+    messages: (await import(`./messages/${locale}.json`)).default
   };
 });
