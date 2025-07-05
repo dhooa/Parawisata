@@ -1,7 +1,7 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-// PERBAIKAN UTAMA ADA DI SINI:
+// PERBAIKAN FINAL: Gunakan named import { ... } untuk semua
 import { usePathname, useRouter } from 'next-intl/navigation';
 import { useTransition } from 'react';
 
