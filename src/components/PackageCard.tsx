@@ -1,5 +1,4 @@
-// PERBAIKAN FINAL: Gunakan named import { ... }
-import { Link } from 'next-intl/navigation';
+import Link from 'next/link'; // PERBAIKAN: Kembali ke 'next/link'
 
 interface PackageProps {
   title: string;
