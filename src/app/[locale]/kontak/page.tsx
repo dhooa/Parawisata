@@ -12,6 +12,27 @@ export function generateMetadata({params: {locale}}: {params: {locale: string}})
 const ContactPage = () => {
   const t = useTranslations('ContactPage');
 
+  // Server Action untuk memproses form
+  async function submitContact(formData: FormData) {
+    'use server';
+
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    // Di dunia nyata, Anda akan mengirim data ini:
+    // 1. Ke API Anda sendiri
+    // 2. Menggunakan layanan seperti Nodemailer, Resend, atau SendGrid untuk mengirim email
+    // 3. Menyimpannya ke database
+    
+    // Untuk demonstrasi, kita hanya akan menampilkannya di konsol server
+    console.log('New Contact Submission:');
+    console.log({ name, email, message });
+
+    // Di sini Anda bisa menambahkan logika redirect atau menampilkan pesan sukses.
+    // Contoh: redirect('/id/terima-kasih');
+  }
+
   return (
     <>
       <header className="bg-dark py-16 text-center text-white">
@@ -25,18 +46,19 @@ const ContactPage = () => {
           {/* Form Kontak */}
           <div className="w-full md:w-3/5">
             <h3 className="mb-6 text-2xl font-bold">{t('form.title')}</h3>
-            <form action="#" className="space-y-4">
+            {/* Tambahkan 'action' ke form */}
+            <form action={submitContact} className="space-y-4">
               <div>
                 <label htmlFor="name" className="sr-only">{t('form.name')}</label>
-                <input type="text" id="name" placeholder={t('form.name')} className="w-full rounded-md border border-gray-300 p-3 focus:border-brand focus:ring-brand" required />
+                <input name="name" type="text" id="name" placeholder={t('form.name')} className="w-full rounded-md border border-gray-300 p-3 focus:border-brand focus:ring-brand" required />
               </div>
               <div>
                 <label htmlFor="email" className="sr-only">{t('form.email')}</label>
-                <input type="email" id="email" placeholder={t('form.email')} className="w-full rounded-md border border-gray-300 p-3 focus:border-brand focus:ring-brand" required />
+                <input name="email" type="email" id="email" placeholder={t('form.email')} className="w-full rounded-md border border-gray-300 p-3 focus:border-brand focus:ring-brand" required />
               </div>
               <div>
                 <label htmlFor="message" className="sr-only">{t('form.message')}</label>
-                <textarea id="message" rows={6} placeholder={t('form.message')} className="w-full rounded-md border border-gray-300 p-3 focus:border-brand focus:ring-brand" required></textarea>
+                <textarea name="message" id="message" rows={6} placeholder={t('form.message')} className="w-full rounded-md border border-gray-300 p-3 focus:border-brand focus:ring-brand" required></textarea>
               </div>
               <button type="submit" className="w-full rounded-md bg-brand px-8 py-3 font-semibold text-white transition-colors hover:bg-brand-dark">{t('form.submit')}</button>
             </form>
