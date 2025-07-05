@@ -1,0 +1,115 @@
+{
+  "Navigation": {
+    "home": "Beranda",
+    "destinations": "Destinasi",
+    "about": "Tentang",
+    "contact": "Kontak"
+  },
+  "LanguageSwitcher": {
+    "id": "Indonesia (ID)",
+    "en": "Inggris (EN)"
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Surga Tersembunyi di Jantung Ranah Minang",
+      "subtitle": "Jelajahi Keindahan Alam, Kekayaan Budaya, dan Petualangan Tak Terlupakan.",
+      "cta": "Temukan Petualangan Anda"
+    },
+    "popularDestinations": "Destinasi Populer",
+    "tourPackages": "Paket Wisata Spesial",
+    "destinations": {
+      "srg": {
+        "title": "Nagari Saribu Rumah Gadang",
+        "description": "Rasakan denyut kehidupan adat Minangkabau di perkampungan adat terpopuler."
+      },
+      "liki": {
+        "title": "Perkebunan Teh Liki",
+        "description": "Nikmati udara sejuk dan pemandangan hijau sejauh mata memandang."
+      },
+      "goa": {
+        "title": "Goa Batu Kapal",
+        "description": "Masuki dunia bawah tanah yang mempesona dan saksikan keajaiban geologi unik."
+      },
+      "hwb": {
+        "title": "Hot Water Boom",
+        "description": "Manjakan diri di pemandian air panas alami, destinasi rekreasi keluarga."
+      }
+    },
+    "packages": {
+      "adventure": {
+        "title": "Petualangan Alam (3D2N)",
+        "items": ["Mendaki Gn. Kerinci (sisi SolSel)", "Tubing di Pauh Duo", "Menjelajahi Air Terjun Kembar"]
+      },
+      "culture": {
+        "title": "Budaya & Sejarah (2D1N)",
+        "items": ["Menginap di Saribu Rumah Gadang", "Belajar adat Minang", "Mengunjungi Menara Songket"]
+      },
+      "family": {
+        "title": "Relaksasi Keluarga (2D1N)",
+        "items": ["Berendam di Hot Water Boom", "Jalan-jalan di Kebun Teh Liki", "Wisata kuliner khas"]
+      }
+    },
+    "ctaButton": "Pesan Sekarang"
+  },
+  "DestinationsPage": {
+    "header": {
+      "title": "Galeri Destinasi Solok Selatan",
+      "subtitle": "Temukan setiap sudut keindahan yang kami tawarkan."
+    },
+    "srg": {
+      "title": "Nagari Saribu Rumah Gadang",
+      "description": "Kawasan Saribu Rumah Gadang adalah sebuah perkampungan adat Minangkabau di Nagari Koto Baru. Di sini, Anda akan menemukan ratusan rumah gadang yang masih berdiri kokoh dan dihuni. Keunikan arsitekturnya yang megah dan suasana pedesaan yang asri menjadikannya destinasi wajib untuk merasakan budaya Minang yang otentik.",
+      "location": "Nagari Koto Baru, Kec. Sungai Pagu"
+    },
+    "liki": {
+      "title": "Perkebunan Teh Liki",
+      "description": "Hamparan hijau perkebunan teh yang menyejukkan mata ini berada di kaki Gunung Kerinci. Udara yang sejuk dan pemandangan yang spektakuler menjadikannya tempat yang sempurna untuk melarikan diri dari hiruk pikuk kota. Anda bisa berjalan-jalan di antara pohon teh dan mengabadikan momen dengan latar belakang yang luar biasa indah.",
+      "location": "Kecamatan Sangir"
+    },
+    "goa": {
+      "title": "Goa Batu Kapal",
+      "description": "Sebuah keajaiban geologi tersembunyi, Goa Batu Kapal menawarkan petualangan menyusuri perut bumi. Nama 'Batu Kapal' berasal dari bentuk salah satu formasi bebatuannya yang menyerupai kapal. Di dalam goa, Anda akan terpukau oleh stalaktit dan stalagmit yang terbentuk selama ribuan tahun. Sinar matahari yang menerobos dari celah-celah goa menciptakan pemandangan yang magis.",
+      "location": "Jorong Ngalau, Nagari Dunsanak"
+    }
+  },
+  "AboutPage": {
+    "header": {
+      "title": "Jantung Kebudayaan dan Alam Sumatera Barat"
+    },
+    "content": {
+      "title": "Selamat Datang di Solok Selatan",
+      "p1": "Terletak di sepanjang jajaran Bukit Barisan yang megah, Kabupaten Solok Selatan adalah sebuah permata yang menyimpan kekayaan alam dan budaya yang luar biasa. Dikenal sebagai \"Heart of Minangkabau\", daerah ini menawarkan pengalaman wisata yang otentik, jauh dari keramaian, di mana tradisi dan alam berpadu secara harmonis.",
+      "p2": "Dari hamparan kebun teh yang menenangkan di lereng gunung, hingga kehangatan perkampungan Saribu Rumah Gadang yang ikonik, setiap sudut Solok Selatan menceritakan kisahnya sendiri. Kami mengundang Anda untuk menjelajahi, merasakan, dan jatuh cinta pada pesona sejati Ranah Minang.",
+      "whyUsTitle": "Mengapa Memilih Solok Selatan?",
+      "whyUsPoints": [
+        "Keaslian Budaya: Rasakan kehidupan masyarakat Minangkabau yang sesungguhnya.",
+        "Keindahan Alam Lengkap: Dari puncak gunung, hamparan teh, hingga goa eksotis.",
+        "Petualangan untuk Semua: Beragam aktivitas menantang dan rekreasi keluarga.",
+        "Keramahan Lokal: Sambutan hangat dari masyarakat lokal akan membuat perjalanan Anda berkesan."
+      ]
+    }
+  },
+  "ContactPage": {
+    "header": {
+      "title": "Hubungi Kami",
+      "subtitle": "Kami siap membantu merencanakan perjalanan tak terlupakan Anda ke Solok Selatan."
+    },
+    "form": {
+      "title": "Kirim Pesan",
+      "name": "Nama Anda",
+      "email": "Email Anda",
+      "message": "Pesan Anda",
+      "submit": "Kirim"
+    },
+    "info": {
+      "title": "Informasi Kontak",
+      "addressLabel": "Alamat:",
+      "addressValue": "Kantor Dinas Pariwisata Solok Selatan, Padang Aro, Sumatera Barat",
+      "emailLabel": "Email:",
+      "phoneLabel": "Telepon:"
+    }
+  },
+  "Footer": {
+    "madeWith": "Dibuat dengan ❤️ di Pekanbaru."
+  }
+}
