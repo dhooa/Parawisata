@@ -1,6 +1,7 @@
 import { DestinationCard } from '@/components/DestinationCard';
 import { PackageCard } from '@/components/PackageCard';
-import Link from 'next-intl/link';
+// PERBAIKAN: Ganti import Link di sini
+import Link from 'next-intl/navigation';
 import { useTranslations } from 'next-intl';
 
 export default function HomePage() {
@@ -61,4 +62,4 @@ export default function HomePage() {
       </section>
     </>
   );
-}
+      }
