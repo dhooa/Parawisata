@@ -1,14 +1,5 @@
 import type { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
-
-export function generateMetadata({params: {locale}}: {params: {locale: string}}): Metadata {
-  const t = require(`../../../messages/${locale}.json`);
-  return {
-    title: t.Navigation.contact,
-    description: t.ContactPage.header.subtitle,
-  };
-}
-
 const ContactPage = () => {
   const t = useTranslations('ContactPage');
 
