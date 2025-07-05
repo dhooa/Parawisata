@@ -9,13 +9,6 @@ const destinationsData = [
   { id: 'goa', imgSrc: '/images/goa-batu-kapal-full.jpg' },
 ];
 
-export function generateMetadata({params: {locale}}: {params: {locale: string}}): Metadata {
-  const t = require(`../../../messages/${locale}.json`);
-  return {
-    title: t.Navigation.destinations,
-    description: t.DestinationsPage.header.subtitle,
-  };
-}
 
 const DestinationsPage = () => {
   const t = useTranslations('DestinationsPage');
