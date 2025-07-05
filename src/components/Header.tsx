@@ -1,6 +1,6 @@
 'use client'; 
 
-// PERBAIKAN UTAMA ADA DI SINI:
+// PERBAIKAN FINAL: Gunakan named import { ... } untuk semua
 import { Link, usePathname } from 'next-intl/navigation'; 
 import { useTranslations } from 'next-intl';
 import { LanguageSwitcher } from './LanguageSwitcher';
