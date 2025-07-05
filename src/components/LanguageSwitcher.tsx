@@ -1,7 +1,8 @@
 'use client';
 
 import { useLocale, useTranslations } from 'next-intl';
-import { usePathname, useRouter } from 'next-intl/client';
+// PERBAIKAN UTAMA ADA DI SINI:
+import { usePathname, useRouter } from 'next-intl/navigation';
 import { useTransition } from 'react';
 
 export const LanguageSwitcher = () => {
